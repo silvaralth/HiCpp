@@ -7,9 +7,40 @@
 //
 
 #include <iostream>
+#include <sstream>
+using namespace std;
+
+void validame (stringstream var){
+    
+    //stringstream ss;
+    //ss.str("var");
+    
+    string s;
+    int i;
+    double d;
+    
+    // Extrae, convierte a los tipos apropiados y asigna, todo en una sola línea:
+    var >> s >> i >> d;
+}
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    //
+    cout << "Hola hola ;) \n";
+    
+    stringstream valor;
+    cout << "Dame un numero, que yo soy todo un adivino ... ";
+    //cin >> valor;
+    
+    //validame(valor);
+    
+    /*
+    stringstream sstm;
+    sstm << "El numero que me diste fue: " << valor << "  :P";
+    string result = sstm.str();
+    */
+    //cout << "El numero que me diste fue: " << valor << "  :P \n";
+    
+    
+    
     return 0;
 }

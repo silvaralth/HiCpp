@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC8ACEBA1E5322D500F22B17 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACEB91E5322D500F22B17 /* main.cpp */; };
-		CCF9C1C01E54782B00921E49 /* figura2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCF9C1BE1E54782B00921E49 /* figura2d.cpp */; };
-		CCF9C1C31E547DC800921E49 /* circulo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCF9C1C11E547DC800921E49 /* circulo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +25,6 @@
 /* Begin PBXFileReference section */
 		CC8ACEB61E5322D500F22B17 /* HolaMundo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HolaMundo; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8ACEB91E5322D500F22B17 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CCF9C1BE1E54782B00921E49 /* figura2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = figura2d.cpp; sourceTree = "<group>"; };
-		CCF9C1BF1E54782B00921E49 /* figura2d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = figura2d.hpp; sourceTree = "<group>"; };
-		CCF9C1C11E547DC800921E49 /* circulo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = circulo.cpp; sourceTree = "<group>"; };
-		CCF9C1C21E547DC800921E49 /* circulo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = circulo.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				CC8ACEB91E5322D500F22B17 /* main.cpp */,
-				CCF9C1BE1E54782B00921E49 /* figura2d.cpp */,
-				CCF9C1BF1E54782B00921E49 /* figura2d.hpp */,
-				CCF9C1C11E547DC800921E49 /* circulo.cpp */,
-				CCF9C1C21E547DC800921E49 /* circulo.hpp */,
 			);
 			path = HolaMundo;
 			sourceTree = "<group>";
@@ -129,9 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF9C1C31E547DC800921E49 /* circulo.cpp in Sources */,
 				CC8ACEBA1E5322D500F22B17 /* main.cpp in Sources */,
-				CCF9C1C01E54782B00921E49 /* figura2d.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

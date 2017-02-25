@@ -12,7 +12,8 @@
 
 using namespace std;
 
-bool validame (string);
+bool validacionSigno (string);
+bool validacionNumerica (string,int);
 
 int main(int argc, const char * argv[]) {
 
@@ -23,21 +24,39 @@ int main(int argc, const char * argv[]) {
         cout << "Dame un numero, que yo soy todo un adivino ... ";
         getline(cin, valor);
         
-        if (validame(valor) == true){
-            cout << "el numero es " << valor << endl;
+        if (validacionSigno(valor) == true){
+            if (valor [0] == '+') {
+                double size = valor.length();
+                string newValor = valor.substr (1, size);
+                cout << "El número que me diste fue: " << newValor << " :P \nChao chao.\n" << endl;
+            } else {
+                cout << "El número que me diste fue: " << valor << " :P \nChao chao.\n" << endl;
+            }
         } else {
-            cout << "\nno ingresaste un numero... ¬¬" << endl;
+            cout << "\nNo me diste ningun numero :( " << endl;
         }
-    } while (validame(valor) == false);
+    } while (validacionSigno(valor) == false);
 
     return 0;
 }
 
-bool validame (string var){
+bool validacionSigno (string var){
+    bool resultado = false;
+    char signo = var[0];
+    
+    if ( signo == '-' || signo == '+'){
+        resultado = validacionNumerica(var, 1);
+    } else {
+        resultado = validacionNumerica(var, 0);
+    }
+    return resultado;
+}
+
+bool validacionNumerica (string var, int posicion){
     bool resultado = false;
     double size = var.length();
-
-    for (int i = 0; i < size ; i++) {
+    
+    for (int i = posicion; i < size ; i++) {
         if ( isdigit(var[i]) && size >= 1 ){
             resultado = true;
         } else {
